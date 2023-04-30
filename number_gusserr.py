@@ -12,6 +12,21 @@ else:
 
 c  = random.randint(0,top_of_range)
 
-print(c)
+while True:
+     user_guess = input("make a guess ")
+     if user_guess.isdigit():
+         user_guess = int(user_guess)
+     else:
+         print("Please print a number nexct time")
+         continue
+     
+
+     if user_guess == c:
+         print("you get it")
+     else:
+         print("fuck off")
+
+
+
 
  
